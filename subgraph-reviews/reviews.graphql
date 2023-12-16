@@ -7,6 +7,10 @@ type Query {
   latestReviews: [Review!]!
 }
 
+type Location @key(fields: "id", resolvable: false) {
+  id: ID!
+}
+
 type Review {
   id: ID!
   "Written text"
